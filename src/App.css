@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pokecards {
+  background: #F0F2F0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius: 40px;
+color: #f79d00;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #64f38c, #f79d00);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #64f38c, #f79d00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.pokebusca {
+background-color: aqua;
+margin-bottom: 50px;
+}
+
+.pokeGrid {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+.pokemon {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(to right, #1f2b94 50%, #003300 50%);
+color:aliceblue;
+}
+
+.pokename {
+  margin-top: 10px;
+}
+.pokeimg {
+  width: 100px;
+}
