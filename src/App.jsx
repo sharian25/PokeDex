@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./App.css";
-import Pokecards from "./components/Pokecards";
+/* import Pokecards from "./components/Pokecards"; */
 import PokeGrid from "./components/PokeGrid";
 
 function App() {
@@ -18,7 +18,7 @@ const obtenerPokemon =()=> {axios.get("https://pokeapi.co/api/v2/pokemon/"+nombr
   })
   .finally(function () {});
 };
-console.log(obtenerPokemon)
+/* console.log(obtenerPokemon) */
   return (
     <>
   
@@ -40,7 +40,9 @@ console.log(obtenerPokemon)
       </>}
       
     </div>
-     <PokeGrid pokemonData={pokemon}/>
+    <PokeGrid/>
+
+
     </>
   );
 }
