@@ -44,6 +44,7 @@ function PokeGrid() {
     p: 4,
   };
 
+
   return (
     <>
       <div className="pokeGrid">
@@ -80,12 +81,13 @@ function PokeGrid() {
             alignItems: "center",
             background: "rgb(34,193,195)",
             background:
-              "linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)",
+              "linear-gradient(0deg, rgba(34,193,195,1) 50%, rgba(100,180,45,1) 100%)",
             fontWeight:'800',
+            borderRadius:'20px',
 
 
           }}
-        >
+        > 
           {selectedPokemon && (
             <>
               <h2 id="parent-modal-title">{selectedPokemon.name}</h2>
@@ -102,8 +104,8 @@ function PokeGrid() {
                   .map((ability) => ability.ability.name)
                   .join(", ")}
               </p>
-              <p>Altura: {selectedPokemon.height}</p>
-              <p>Peso: {selectedPokemon.weight}</p>
+              <p>Altura: {(selectedPokemon.height/10)}m</p>
+              <p>Peso: {(selectedPokemon.weight/10)}kg</p>
             </>
           )}
         </Box>
